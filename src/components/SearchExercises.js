@@ -4,10 +4,9 @@ import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 import { exerciseOptions, fetchData } from "../utils/fetchData";
 import HorizontalScrollbar from "./HorizontalScrollbar";
 
-const SearchExercises = () => {
+const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 	const [search, setSearch] = useState("");
 	const [bodyParts, setBodyParts] = useState([]);
-	const [exercises, setExercises] = useState([]);
 
 	// to get body parts from api to render it as a slider
 	const fetchExercisesData = async () => {
@@ -89,8 +88,8 @@ const SearchExercises = () => {
 				<HorizontalScrollbar
 					data={bodyParts}
 					// bodyParts
-					// setBodyPart={setBodyPart}
-					// bodyPart={bodyPart}
+					setBodyPart={setBodyPart}
+					bodyPart={bodyPart}
 				/>
 			</Box>
 		</Stack>
