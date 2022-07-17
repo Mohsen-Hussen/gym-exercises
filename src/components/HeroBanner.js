@@ -51,6 +51,7 @@ const HeroBanner = () => {
 					opacity: "0.1",
 					display: { lg: "block", xs: "none" },
 					fontSize: "200px",
+					marginTop: "6rem",
 				}}
 			>
 				Exercise
