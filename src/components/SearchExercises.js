@@ -15,7 +15,6 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 			exerciseOptions
 		);
 		setBodyParts(["all", ...bodyPartsData]);
-		console.log("body parts data from api", bodyPartsData);
 	};
 
 	useEffect(() => {
